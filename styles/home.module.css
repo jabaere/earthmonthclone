@@ -1,0 +1,156 @@
+/*checkbox*/
+.custom_checkbox {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.custom_checkbox input {
+  display: none;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 18px;
+  width: 18px;
+  color: var(--main-color);
+  background-color: #fff;
+  border: 1px solid var(--main-color);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom_checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 6px;
+  height: 13px;
+  border: solid var(--main-color);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/*content*/
+
+.home_container {
+  padding: 8vh 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home_left_side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0.6;
+}
+
+.home_image_container {
+}
+
+.home_right_side {
+}
+.home_image_one {
+  max-width: 90%;
+  width: 100% !important;
+  height: auto !important;
+}
+
+.home_image_two {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 72px;
+  width: 100% !important;
+  max-width: 90%;
+  height: auto !important;
+}
+.home_main_button {
+  background-color: transparent;
+  text-transform: uppercase;
+  width: 100%;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  border-radius: 0;
+  margin: 0 0 8px;
+  font-size: 1em;
+  height: 7.5vh;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.home_main_button:hover {
+  color: #fff;
+  background-color: var(--main-color);
+}
+.home_secondary_btn {
+  font-size: 1.8vh;
+  font-family: var(--main-font);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  background-color: transparent;
+  color: var(--main-color);
+  cursor: pointer;
+  border: 1px solid var(--main-color);
+  padding: 5px 10px;
+  margin: 10px auto 25px;
+}
+.home_button_desktop_txt {
+  display: none;
+  font-family: var(--main-font);
+  font-size: 2.4vh;
+}
+.home_button_mobile_txt {
+  display: block;
+  font-family: var(--main-font);
+  font-size: 2.4vh;
+}
+.spotify_svg {
+  font-size: 1.2em;
+  width: 2.5em;
+  height: 2.5em;
+}
+.home_checkbox_text {
+  font-family: var(--main-font);
+  font-size: 2.3vh;
+  color: var(--main-color);
+}
+
+@media screen and (min-width: 1081px) {
+  .home_image_one {
+    max-width: 70vh;
+  }
+
+  .home_image_two {
+    max-width: 70vh;
+  }
+  .home_button_desktop_txt {
+    display: block;
+  }
+  .home_button_mobile_txt {
+    display: none;
+  }
+  .home_container {
+    flex-direction: row;
+  }
+}
