@@ -6,7 +6,7 @@ import HomeScreen from "@/components/Home";
 import AboutScreen from "@/components/About";
 
 interface RootState {
-  route: any; // You might have a more complex structure here
+  route: any;
 }
 
 export default function Home() {

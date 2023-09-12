@@ -4,10 +4,6 @@ import "@/styles/globals.css";
 import { NavigationBar } from "@/components/NavigationBar";
 import { Provider } from "react-redux";
 import store from "@/store/store";
-// export const metadata = {
-//   title: "Review",
-//   description: "Review movies",
-// };
 
 type RootLayoutProps = {
   children: ReactNode;

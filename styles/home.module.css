@@ -56,16 +56,18 @@
 
 .home_left_side {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
-  flex: 0.6;
+}
+.home_left_side_container {
+  display: flex;
+  flex-direction: column;
 }
 
 .home_image_container {
+  width: auto;
 }
 
-.home_right_side {
-}
 .home_image_one {
   max-width: 90%;
   width: 100% !important;
@@ -80,6 +82,12 @@
   max-width: 90%;
   height: auto !important;
 }
+.main_button_container {
+  margin-top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
 .home_main_button {
   background-color: transparent;
   text-transform: uppercase;
@@ -87,7 +95,7 @@
   color: var(--main-color);
   border: 1px solid var(--main-color);
   border-radius: 0;
-  margin: 0 0 8px;
+  margin: 5em 0 2.5em;
   font-size: 1em;
   height: 7.5vh;
   cursor: pointer;
@@ -118,12 +126,12 @@
 .home_button_desktop_txt {
   display: none;
   font-family: var(--main-font);
-  font-size: 2.4vh;
+  font-size: 5vw;
 }
 .home_button_mobile_txt {
   display: block;
   font-family: var(--main-font);
-  font-size: 2.4vh;
+  font-size: 5vw;
 }
 .spotify_svg {
   font-size: 1.2em;
@@ -134,6 +142,76 @@
   font-family: var(--main-font);
   font-size: 2.3vh;
   color: var(--main-color);
+}
+.spotify_status_container {
+  display: flex;
+  height: 8vh;
+  text-align: center;
+  align-items: center;
+}
+.spotify_status {
+  display: flex;
+  gap: 20px;
+  font-family: var(--main-font);
+  font-size: 2.5vh;
+  color: var(--main-color);
+}
+.icon_box {
+  font-size: 1em;
+  width: 2em;
+  height: 2em;
+  min-width: 2em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid var(--main-color);
+  background-color: transparent;
+  color: var(--main-color);
+  cursor: pointer;
+}
+.soc_icon {
+  height: 1em;
+}
+
+.home_right_side {
+  height: 100%;
+  text-align: center;
+  width: 100%;
+}
+
+.home_right_img {
+  object-fit: cover;
+  border-radius: 100em 100em 0 0;
+  background-color: #fff;
+  width: 100%;
+}
+.home_right_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.home_right_earthgangpng {
+  max-width: 30vh;
+  width: 100%;
+  height: initial !important;
+  margin-top: 10px;
+}
+.home_left_bottom_container {
+  width: 100%;
+}
+.footer_container {
+  border-top: 1px solid var(--main-color);
+  font-family: var(--main-font);
+
+  color: var(--main-color);
+}
+.footer_container > p {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 @media screen and (min-width: 1081px) {
@@ -150,7 +228,48 @@
   .home_button_mobile_txt {
     display: none;
   }
-  .home_container {
+
+  .home_sub_container {
     flex-direction: row;
+  }
+  .home_image_container {
+    width: auto;
+  }
+
+  .home_right_container {
+    width: 100%;
+  }
+  .main_button_container {
+    margin-top: -113px;
+    width: 52%;
+  }
+  .home_left_bottom_container {
+    width: 55%;
+  }
+  .home_right_side {
+    width: 40%;
+  }
+  .footer_container {
+    font-size: 3.7vh;
+    line-height: 4.5vh;
+  }
+  .home_left_side {
+    padding-right: 5vh;
+  }
+  .home_main_button {
+    margin: 0 0 8px;
+  }
+  .home_button_desktop_txt {
+    font-size: 2.4vh;
+  }
+  .home_button_mobile_txt {
+    font-size: 2.4vh;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .footer_container {
+    font-size: 5.6vw;
+    line-height: 6.5vw;
   }
 }
