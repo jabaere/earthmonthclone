@@ -49,7 +49,7 @@ html:focus-within {
 }
 
 html {
-  font-size: 62.5%;
+  /* font-size: 62.5%; */
 }
 
 /* Set core body defaults */
@@ -96,6 +96,7 @@ select {
 }
 .app {
   padding: 0 6vh;
+  overflow: hidden;
 }
 
 a {
