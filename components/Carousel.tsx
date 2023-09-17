@@ -31,7 +31,7 @@ const CarouselText = () => (
     }}
   >
     {[1, 2, 3, 4].map((_, index) => (
-      <TextItems index={index} />
+      <TextItems index={index} key={index} />
     ))}
   </Marquee>
 );

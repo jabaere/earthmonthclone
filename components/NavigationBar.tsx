@@ -7,6 +7,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { handleRouteChange } from "@/store/routeReducer";
 import { useSelector, useDispatch } from "react-redux";
+import { handleMenu } from "@/store/menuReducer";
 export const NavigationBar = () => {
   const dispatch = useDispatch();
   //rutes state
@@ -67,6 +68,7 @@ export const NavigationBar = () => {
           fill="#168a43"
           xmlns="http://www.w3.org/2000/svg"
           className={styles.burger_menu}
+          onClick={() => dispatch(handleMenu(true))}
         >
           <rect width="40" height="4" fill="var(--main-col)"></rect>
           <rect y="8" width="40" height="4" fill="var(--main-col)"></rect>

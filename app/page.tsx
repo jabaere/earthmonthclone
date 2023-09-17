@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { motion, AnimatePresence } from "framer-motion";
 import HomeScreen from "@/components/Home";
 import AboutScreen from "@/components/About";
-
+import { ToggleMenu } from "@/components/MobileMenu";
 interface RootState {
   route: any;
 }
@@ -37,7 +37,8 @@ export default function Home() {
     },
   };
   return (
-    <main>
+    <motion.main>
+      <ToggleMenu />
       <AnimatePresence mode="wait">
         <motion.div
           key={route === "Home" ? route : "empty"}
@@ -50,6 +51,6 @@ export default function Home() {
           {route === "Home" ? <HomeScreen /> : <AboutScreen />}
         </motion.div>
       </AnimatePresence>
-    </main>
+    </motion.main>
   );
 }

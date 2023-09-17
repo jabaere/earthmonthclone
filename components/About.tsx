@@ -23,7 +23,7 @@ export default function AboutScreen() {
       y: 50,
       transition: {
         duration: custom * 2.5,
-
+        velocity: custom * 2.5,
         ease: "easeOut",
         type: "tween",
       },
@@ -35,12 +35,13 @@ export default function AboutScreen() {
         {images.map((item, index) => (
           <motion.div
             className={styles.logo_container}
-            data-divIndex={index}
+            data-divindex={index}
             custom={index}
             animate="visible"
             variants={variants}
             initial={{ opacity: 0, y: 50 }}
             exit="exit"
+            key={index}
           >
             <Image
               src={item}

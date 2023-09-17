@@ -15,5 +15,11 @@ export function Countdown({ seconds }: any) {
     }
   }, [remainingTime, seconds]);
 
-  return <div>{<p>Checking global shares in {remainingTime} seconds</p>}</div>;
+  return (
+    <div>
+      <p>
+        <i>Checking global shares in {remainingTime} seconds</i>
+      </p>
+    </div>
+  );
 }
