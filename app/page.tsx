@@ -1,6 +1,6 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import React from "react";
+import { useSelector } from "react-redux";
 import { motion, AnimatePresence } from "framer-motion";
 import HomeScreen from "@/components/Home";
 import AboutScreen from "@/components/About";

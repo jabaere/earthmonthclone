@@ -47,34 +47,34 @@
 
 /*content*/
 
-.home_container {
+.container {
   padding: 8vh 0 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.home_left_side {
+.left_side {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.home_left_side_container {
+.left_side_container {
   display: flex;
   flex-direction: column;
 }
 
-.home_image_container {
+.image_container {
   width: auto;
 }
 
-.home_image_one {
+.image_one {
   max-width: 90%;
   width: 100% !important;
   height: auto !important;
 }
 
-.home_image_two {
+.image_two {
   display: block;
   margin-top: 12px;
   margin-bottom: 72px;
@@ -88,7 +88,7 @@
   display: flex;
   flex-direction: column;
 }
-.home_main_button {
+.main_button {
   background-color: transparent;
   text-transform: uppercase;
   width: 100%;
@@ -105,11 +105,11 @@
   gap: 14px;
   transition: background-color 0.3s, color 0.3s;
 }
-.home_main_button:hover {
+.main_button:hover {
   color: #fff;
   background-color: var(--main-color);
 }
-.home_secondary_btn {
+.secondary_btn {
   font-size: 1.8vh;
   font-family: var(--main-font);
   -webkit-appearance: none;
@@ -123,12 +123,12 @@
   padding: 5px 10px;
   margin: 10px auto 25px;
 }
-.home_button_desktop_txt {
+.button_desktop_txt {
   display: none;
   font-family: var(--main-font);
   font-size: 5vw;
 }
-.home_button_mobile_txt {
+.button_mobile_txt {
   display: block;
   font-family: var(--main-font);
   font-size: 5vw;
@@ -138,7 +138,7 @@
   width: 2em;
   height: 2em;
 }
-.home_checkbox_text {
+.checkbox_text {
   font-family: var(--main-font);
   font-size: 2.3vh;
   color: var(--main-color);
@@ -189,31 +189,31 @@
   height: 1em;
 }
 
-.home_right_side {
+.right_side {
   height: 100%;
   text-align: center;
   width: 100%;
 }
 
-.home_right_img {
+.right_img {
   object-fit: cover;
   border-radius: 100em 100em 0 0;
   background-color: #fff;
   width: 100%;
 }
-.home_right_container {
+.right_container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
-.home_right_earthgangpng {
+.right_earthgangpng {
   max-width: 30vh;
   width: 100%;
   height: initial !important;
   margin-top: 10px;
 }
-.home_left_bottom_container {
+.left_bottom_container {
   width: 100%;
 }
 .footer_container {
@@ -228,7 +228,7 @@
 }
 
 @media screen and (min-width: 1081px) {
-  .home_image_one {
+  .image_one {
     max-width: 70vh;
   }
   .spotify_status_container {
@@ -236,50 +236,53 @@
     width: 53%;
   }
 
-  .home_image_two {
+  .image_two {
     max-width: 70vh;
   }
-  .home_button_desktop_txt {
+  .button_desktop_txt {
     display: block;
   }
-  .home_button_mobile_txt {
+  .button_mobile_txt {
     display: none;
   }
 
-  .home_sub_container {
+  .sub_container {
     flex-direction: row;
   }
-  .home_image_container {
+  .image_container {
     width: auto;
   }
 
-  .home_right_container {
+  .right_container {
     width: 100%;
   }
   .main_button_container {
-    margin-top: -113px;
-    width: 52%;
+    margin-top: -123px;
+    width: 53%;
   }
-  .home_left_bottom_container {
+  .left_bottom_container {
     width: 55%;
   }
-  .home_right_side {
+  .right_side {
     width: 40%;
   }
   .footer_container {
     font-size: 3.7vh;
     line-height: 4.5vh;
   }
-  .home_left_side {
+  .left_side {
     padding-right: 5vh;
   }
-  .home_main_button {
+  .main_button {
     margin: 0 0 8px;
   }
-  .home_button_desktop_txt {
+  .button_desktop_txt {
     font-size: 2.4vh;
   }
-  .home_button_mobile_txt {
+  .button_mobile_txt {
+    font-size: 2.4vh;
+  }
+  .spotify_svg {
     font-size: 2.4vh;
   }
 }

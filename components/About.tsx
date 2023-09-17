@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "@/styles/about.module.css";
 import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 export default function AboutScreen() {
   const images = [
     "/images/earthgang-green-logo.png",

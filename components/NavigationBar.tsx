@@ -6,14 +6,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { handleRouteChange } from "@/store/routeReducer";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { handleMenu } from "@/store/menuReducer";
+
 export const NavigationBar = () => {
   const dispatch = useDispatch();
-  //rutes state
-  const [tabRoute, setTabroute] = useState("Home");
-
-  //
 
   const right_navbar = ["Privacy", "Terms", "Promotion", "Terms"];
 

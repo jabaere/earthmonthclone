@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-//import PayloadAction in case you're using Typescript
 
 const initialState = { isOpen: false };
 

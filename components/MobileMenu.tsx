@@ -1,7 +1,7 @@
-import React, { useState, useRef, useEffect } from "react";
+import React from "react";
 import styles from "@/styles/mobile.module.css";
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { handleMenu } from "@/store/menuReducer";
 import { handleRouteChange } from "@/store/routeReducer";
 import { useSelector, useDispatch } from "react-redux";
