@@ -293,4 +293,10 @@
     line-height: 6.5vw;
   }
 }
+
+@media screen and (min-height: 1080px) {
+  .main_button_container {
+    margin-top: 0;
+  }
+}
 /**/
